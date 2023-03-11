@@ -40,7 +40,7 @@ async def main():
     cache = {}
     for coin in coins:
       price,status = await fetch_price(session, coin)
-      print(price)
+      #print(price)
       price = str(orjson.loads(price)['price'])
       price_formatted = f"{float(price):.2f}"
       cache[coin] = price_formatted
