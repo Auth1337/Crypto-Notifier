@@ -1,5 +1,6 @@
-import aiohttp
 import os
+os.system("pip install -r requirements.txt")
+import aiohttp
 import sys
 import orjson,json
 import asyncio
